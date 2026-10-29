@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "compile C file",
+			"command": "gcc",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}.out"
+			]
+		},
+		{
+			"type": "shell",
+			"label": "delete compiled C file",
+			"command": "rm",
+			"args": [
+				"${fileDirname}/${fileBasenameNoExtension}.out"
+			]
+		}
+	]
+}
