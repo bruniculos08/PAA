@@ -64,5 +64,4 @@ int print_list(list *p)
         printf(", ");
     }
     printf("\n");
-    
 }
